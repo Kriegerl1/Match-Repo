@@ -8,8 +8,6 @@ function fade() {
 
         if (userUiView < userView - uiFadePoint) {
             uiFade[i].classList.add('active');
-        }else{
-            uiFade[i].classList.remove('active');
         }
     }
 }
