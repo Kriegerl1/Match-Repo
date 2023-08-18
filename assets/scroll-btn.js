@@ -6,7 +6,7 @@ console.log(screenView)
 
 function goTop() {
     const topoItem = Anchor.getBoundingClientRect().top;
-    const visibleItem = topoItem - screenView < -300;
+    const visibleItem = topoItem - screenView < -800;
     // console.log(topoItem)
 
     if (visibleItem){

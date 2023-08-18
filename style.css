@@ -455,6 +455,14 @@ footer .social-media {
 }
 
 @media screen and (min-width: 300px) and (max-width: 750px) {
+
+    #about-me h2{
+        margin-top: 25%;
+    }
+
+    .responsive-navigation{
+        display: block;
+    }
     .navigation-bar{
         display: none;
     }
