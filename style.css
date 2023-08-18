@@ -450,8 +450,8 @@ footer .social-media {
     padding-inline-start: 2rem;
 }
 
-.open{
-    display: block;
+.responsive-navigation{
+    display: none;
 }
 
 @media screen and (min-width: 300px) and (max-width: 750px) {
