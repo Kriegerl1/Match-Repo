@@ -279,6 +279,8 @@ h2 {
     height: 80%;
     padding-inline-end: 2%;
     width: 100%;
+    height: 100%;
+    visibility: visible;
 }
 
 #about-me strong {
@@ -325,7 +327,7 @@ h2 {
     width: 100%;
 }
 
-#projects .card-content > div{
+#projects .card-content>div {
     width: 30%;
 }
 
@@ -484,15 +486,57 @@ footer .social-media {
 .responsive-navigation {
     display: none;
 }
+
 /* ---------------------------------------------------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 751px) and (max-width: 1366px) {
-    #projects .card-content > div{
-    width: 50%;
+@media screen and (min-width: 1051px) and (max-width: 1370px) {
+    #projects .card-content>div {
+        width: 50%;
+    }
+
+    .layout-grid .about-img,
+    .about-img img {
+        width: 100%;
+        visibility: visible;
+    }
+
+    #about-me p {
+        margin-top: 3%;
+        font-size: 1.6rem;
+    }
+
+    .layout-grid #about-me h2 {
+        margin-top: 25%;
+    }
+
 }
-@media screen and (min-width: 300px) and (max-width: 750px) {
+@media screen and (min-width: 751px) and (max-width: 1050px) {
+        /* ------ABOUT */
+        #about-me p {
+            font-size: 1.6rem;
+        }
     
+        .layout-grid #about-me h2 {
+            margin-top: 25%;
+        }
+    
+        .layout-grid #about-content {
+            flex-direction: column;
+        }
+
+        #projects .card-content>div {
+            width: 100%;
+        }
+    
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 750px) {
+    #projects .card-content>div {
+        width: 100%;
+    }
+
     /* ---------------MENU-BAR-------------- */
     .r-menu-nav-bar {
         background-color: #222;
@@ -631,7 +675,7 @@ footer .social-media {
     .layout-grid .card-content {
         margin-inline-start: -20%;
     }
-    
+
     #projects #card img {
         object-fit: cover;
         position: absolute;
@@ -644,23 +688,24 @@ footer .social-media {
         margin-inline: 10%;
         padding: 20%;
     }
-    
+
     #projects .info-content p {
         display: none;
         transition-duration: .3s;
     }
-    
+
     #projects .info-content h3 {
         color: #000000;
         font-family: 'Righteous';
         font-size: 3rem;
         text-shadow: .2rem .2rem .5rem white;
     }
-    
+
     .layout-grid .banner {
         flex-wrap: wrap;
         margin-inline: -15%;
     }
+
     #projects #card {
         flex-direction: column;
         width: 105%;
@@ -686,6 +731,7 @@ footer .social-media {
         transition: all .3s ease-in-out;
         z-index: +1;
     }
+
     #projects #card .link-banner {
         display: none;
     }
