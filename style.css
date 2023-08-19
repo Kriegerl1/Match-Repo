@@ -650,12 +650,13 @@ footer .social-media {
     /* ----HOME */
     .layout-grid .home p {
         font-size: 4rem;
-        margin-inline-start: 35%;
+        margin-inline-start: 20%;
+        margin-bottom: 10rem;
     }
 
     .layout-grid .home i {
         font-size: 2.2rem;
-        margin-inline: -11%;
+        margin-inline-start: -16%;
     }
 
     /* ------ABOUT */
