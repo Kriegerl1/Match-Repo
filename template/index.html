@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta name="author" content="Leonardo Rodrigues">
+    <meta name="description"
+        content="Meu nome é Leonardo Rodrigues, este é meu portfólio de Desenvolvedor, atualmente estou ampliando meus conhecimentos e buscando vagas para me desenvolver ainda melhor.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../assets/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway&family=Righteous&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+    <title>Portfólio Dev \\ KriegerCode</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://kriegerl1.github.io/Match-Repo/">
+                <img src="../media/Logo.png" alt="LOGO">
+            </a>
+
+        </div>
+        <nav class="responsive-navigation">
+            <button onclick="menuShow()" class="r-menu-nav-bar"><ion-icon name="menu-outline"></ion-icon></button>
+            <a href="#scroll-home" class="home">Portfólio</a>
+            <div class="r-menu-content">
+                <div class="wrapper">
+
+
+                    <ul class="r-nav-bar-content">
+
+
+                        <a href="#scroll-about" id="nav-bar-about" class="about">
+                            <label for="nav-bar-about" class="about-label">Sobre Mim
+                            </label>
+                        </a>
+
+                        <a href="#scroll-projects" id="nav-bar-project" class="project">
+                            <label for="nav-bar-project" class="project-label">Projetos
+                            </label>
+                        </a>
+
+                        <a href="../media/c_Leonardo-Rodrigues-Dev.pdf" download="Leo_Rodrigues_" id="nav-bar-resume"
+                            class="resume">
+                            <label for="nav-bar-resume" class="resume-label">Currículo
+                            </label>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <nav class="navigation-bar">
+            <ul class="nav-bar-content">
+                <a href="https://kriegerl1.github.io/Match-Repo/" id="nav-bar-home" class="home">
+                    <ion-icon name="home-outline" for="nav-bar-home" class="nav-bar-icon"></ion-icon>
+                    <label for="nav-bar-home" class="home-label">Início</label>
+                </a>
+
+                <a href="#scroll-about" id="nav-bar-about" class="about">
+                    <ion-icon name="person-circle-outline" for="nav-bar-about" class="nav-bar-icon"></ion-icon>
+                    <label for="nav-bar-about" class="about-label">Sobre Mim
+                    </label>
+                </a>
+
+                <a href="#scroll-projects" id="nav-bar-project" class="project">
+                    <ion-icon name="rocket-outline" for="nav-bar-project" class="nav-bar-icon"></ion-icon>
+                    <label for="nav-bar-project" class="project-label">Projetos
+                    </label>
+                </a>
+
+                <a href="../media/c_Leonardo-Rodrigues-Dev.pdf" download="Leo_Rodrigues_" id="nav-bar-resume" class="resume">
+                    <ion-icon name="school-outline" for="nav-bar-resume" class="nav-bar-icon"></ion-icon>
+                    <label for="nav-bar-resume" class="resume-label">Currículo
+                    </label>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <div class="chat_content">
+            <div class="chat_box">
+                <div class="chat_box_header">
+                    <div class="logo_steia">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    </div>
+                    <div class="info_name">
+                        <h4 class="chatbox__heading--header">Stec.Bot</h4>
+                        <p class="chatbox__description--header">Assistente de virtual</p>
+                    </div>
+                </div>
+                <div class="chat_box_body">
+                    <div>
+                        <div class="messages_item messages_item--visitor">Olá Leonardo, eu sou StecBot! Sua assistente virtual.</div>
+                    </div>
+                </div>
+                <div class="chat_box_footer">
+                    <input type="text" placeholder="Escreva uma mensagem...">
+                    <ion-icon class="send_icon" id="send_btn" name="send">
+                        <button for="send_btn" class="chatbox__send--footer send_button">Enviar</button>
+                    </ion-icon>
+                </div>
+
+            </div>
+            <div class="btn_chat">
+                <img src="../media/chatbox-icon.svg" />
+            </div>
+        </div>
+
+    </aside>
+
+    <aside>
+        <div class="nav-social">
+            <section class="aside-social-medias">
+                <div class="aside-linkedin">
+                    <a href="http://www.linkedin.com/in/leokrodrigues" id="linkedin-social" target="_blank"><ion-icon
+                            class="aside-media" name="logo-linkedin"></ion-icon></a>
+                </div>
+                <div class="aside-github">
+                    <a href="https://github.com/Kriegerl1" id="github-social" target="_blank"><ion-icon
+                            class="aside-media" name="logo-github"></ion-icon></a>
+                </div>
+            </section>
+        </div>
+    </aside>
+    <aside>
+        <div class="goTop" id="getTop">
+            <a href="#scroll-home">
+                <ion-icon class="arrow-goTop" name="arrow-up-outline"></ion-icon>
+            </a>
+        </div>
+    </aside>
+
+    <main>
+        <section id="scroll-home">
+            <div class="layout-grid">
+                <div class="home">
+                    <p class="fade right">Olá,
+                    <h1 class="fade left delay-2s">Eu sou o <Strong><a href="https://github.com/Kriegerl1"
+                                target="_blank" id="name">"Krieger"</a></strong>,<br>
+                        <i>
+                            <<strong>/Desenvolvedor em Formação>
+                        </i>
+                        </strong>
+                    </h1>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="scroll-about">
+            <div class="layout-grid">
+                <div id="about-me" class="fade right delay">
+                    <h2>Sobre Mim</h2>
+                    <div id="about-content">
+                        <div class="about-img">
+                            <img src="../media/KthulhuBG.jpg" alt="Carlostulhu">
+                        </div>
+                        <div class="info-content-about">
+
+                            <p>
+                            <div id="p-about-1" class="fade delay-1s">
+                                <p>Olá, eu sou <strong>Leonardo Rodrigues</strong>, mas você
+                                    pode me chamar de
+                                    <strong>Krieger</strong>.Tenho <strong>26 anos</strong> sou de <strong>Santa
+                                        Catarina</strong>,
+                                    sou um entusiasta do mundo do <strong>desenvolvimento</strong>.
+                                </p>
+                            </div>
+
+                            <div id="p-about-2" class="fade delay-2s">
+                                <br>
+                                <p>Minha paixão é o desenvolvimento <strong>backend</strong>, onde busco aplicar com
+                                    <strong>criatividade</strong> e
+                                    <strong>inovação</strong> para construir soluções <strong>robustas</strong> e
+                                    <strong>eficientes</strong>.
+                                </p>
+                            </div>
+
+                            <div id="p-about-3" class="fade delay-3s">
+                                <br>
+                                <p> Estou em constante busca por <strong>novos conhecimentos</strong> e
+                                    <strong>desafios</strong>, sempre ansioso para explorar novas áreas de
+                                    desenvolvimento.
+                                    Acredito que a <strong>aprendizagem</strong> é uma jornada <strong>contínua</strong>
+                                    e
+                                    estou
+                                    determinado a
+                                    aplicar cada novo <strong>insight</strong> de maneira <strong>prática</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="scroll-projects">
+            <div class="layout-grid">
+                <div id="projects">
+                    <h2>Projetos</h2>
+                    <div class="card-content">
+                        <div class="fade delay">
+                                
+                        </div>
+                        <div class="fade delay-1s">
+                            <div id="card">
+                                <div class="banner">
+                                    <div class="img-fit">
+                                        <img src="../media/5 mes.JPG" alt="poster">
+                                    </div>
+                                    <div class="info-content">
+                                        <h3 class="tittle-banner">Nome do projeto 2</h3>
+                                        <p>Descrição: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+                                            culpa corrupti odit eaque enim maiores quam, earum cupiditate blanditiis
+                                            esse
+                                            nihil consequatur repellendus soluta adipisci?</p>
+                                    </div>
+                                </div>
+                                <div class="link-banner">
+                                    <a href="https://kriegerl1.github.io/Match-Repo/">Mais+</a>
+                                    <a href="https://github.com/Kriegerl1">Repositório</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fade delay">
+                            <div id="card">
+                                <div class="banner">
+                                    <div class="img-fit">
+                                        <img src="../media/6 mes.JPG" alt="poster">
+                                    </div>
+                                    <div class="info-content">
+                                        <h3 class="tittle-banner">Nome do projeto 3</h3>
+                                        <p>Descrição: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+                                            culpa
+                                            corrupti odit eaque enim maiores quam, earum cupiditate blanditiis esse
+                                            nihil
+                                            consequatur repellendus soluta adipisci?</p>
+                                    </div>
+                                </div>
+                                <div class="link-banner">
+                                    <a href="https://kriegerl1.github.io/Match-Repo/">Mais+</a>
+                                    <a href="https://github.com/Kriegerl1">Repositório</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fade delay-1s">
+                            <div id="card">
+                                <div class="banner">
+                                    <div class="img-fit">
+                                        <img src="../media/5 mes.JPG" alt="poster">
+                                    </div>
+                                    <div class="info-content">
+                                        <h3 class="tittle-banner">Nome do projeto 4</h3>
+                                        <p>Descrição: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+                                            culpa
+                                            corrupti odit eaque enim maiores quam, earum cupiditate blanditiis esse
+                                            nihil
+                                            consequatur repellendus soluta adipisci?</p>
+                                    </div>
+                                </div>
+                                <div class="link-banner">
+                                    <a href="https://kriegerl1.github.io/Match-Repo/">Mais+</a>
+                                    <a href="https://github.com/Kriegerl1">Repositório</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fade delay">
+                            <div id="card">
+                                <div class="banner">
+                                    <div class="img-fit">
+                                        <img src="../media/6 mes.JPG" alt="poster">
+                                    </div>
+                                    <div class="info-content">
+                                        <h3 class="tittle-banner">Nome do projeto 3</h3>
+                                        <p>Descrição: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+                                            culpa
+                                            corrupti odit eaque enim maiores quam, earum cupiditate blanditiis esse
+                                            nihil
+                                            consequatur repellendus soluta adipisci?</p>
+                                    </div>
+                                </div>
+                                <div class="link-banner">
+                                    <a href="https://kriegerl1.github.io/Match-Repo/">Mais+</a>
+                                    <a href="https://github.com/Kriegerl1">Repositório</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fade delay-1s">
+                            <div id="card">
+                                <div class="banner">
+                                    <div class="img-fit">
+                                        <img src="../media/5 mes.JPG" alt="poster">
+                                    </div>
+                                    <div class="info-content">
+                                        <h3 class="tittle-banner">Nome do projeto 4</h3>
+                                        <p>Descrição: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+                                            culpa
+                                            corrupti odit eaque enim maiores quam, earum cupiditate blanditiis esse
+                                            nihil
+                                            consequatur repellendus soluta adipisci?</p>
+                                    </div>
+                                </div>
+                                <div class="link-banner">
+                                    <a href="https://kriegerl1.github.io/Match-Repo/">Mais+</a>
+                                    <a href="https://github.com/Kriegerl1">Repositório</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="layout-grid">
+            <p>Copyright &copy; 2023 <a rel="reopensite" href="https://kriegerl1.github.io/Match-Repo/">Leonardo "Krieger" Rodrigues</a> -
+                Desenvolvedor em formação.</p>
+            <div>
+                <p>Siga-me <a href="http://www.linkedin.com/in/leokrodrigues" target="_blank"><ion-icon
+                            class="social-media" name="logo-linkedin"></ion-icon></a><a
+                        href="https://github.com/Kriegerl1" target="_blank"><ion-icon class="social-media"
+                            name="logo-github"></ion-icon></a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    $SCRIPT_ROOT = {{ request.script_root|tojson }};
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+<script rel="Menu-responsivo" src="{{ url_for('assets', filename='menu.js') }}"></script>
+<script rel="Scroll-Animation" src="{{ url_for ('assets', filename = 'scroll-btn.js') }}"></script>
+<script rel="Fade-Animation" src="../assets/fade.js"></script>
+<script src="../assets/static/app.js"></script>
+
+<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
+</html>
